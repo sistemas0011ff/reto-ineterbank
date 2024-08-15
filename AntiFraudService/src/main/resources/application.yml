@@ -1,0 +1,13 @@
+server:
+  port: 8881
+
+spring:
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: antifraud-service-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    topic:
+      transaction-result: ${KAFKA_TOPIC_TRANSACTION_RESULT:topic-trx-validation-result}
+      transaction: ${KAFKA_TOPIC_TRANSACTION:trx-topic}
