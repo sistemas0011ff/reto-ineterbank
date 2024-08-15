@@ -28,6 +28,7 @@ El sistema se compone de dos microservicios principales:
 
 ## Arquitectura
 
+![Arquitectura](Img/arquiectura_hex.png)
 ### Descripción de las Capas - Arquitectura Hexagonal en los microservicios creados
 
 Este documento describe las diferentes capas de la arquitectura hexagonal implementada en los microservicios. Cada capa tiene responsabilidades específicas que contribuyen al correcto funcionamiento y mantenimiento del sistema.
